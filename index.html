@@ -1,48 +1,114 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>Rust 入门分享 🦀</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2
-						<aside class="notes">
-						<p>Some notes</p>
-						</aside>
-						<p>Some slide text</p>
-						<aside class="notes">
-						<p>and some more notes</p>
-					</aside>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Rust 入门分享 🦀</h2>
+			</section>
+			<section>
+				<section>
+					为什么学习 Rust？
 				</section>
-			</div>
+				<section>
+					<ul>
+						<li>
+							连续七年成为全世界最受欢迎的语言、没有 GC 也无需手动内存管理
+						</li>
+						<li>
+							性能比肩 C++/C 还能直接调用它们的代码、安全性极高
+						</li>
+					</ul>
+				</section>
+				<section>
+					跨平台，可以编译为各系统的可执行文件
+				</section>
+				<section>
+					Rust 将来可能会成为 Linux 内核开发的第二语言
+				</section>
+			</section>
+			<section>
+				<section>
+					环境安装
+				</section>
+				<section>
+					在 Linux 或 macOS 上安装 rust
+					<pre style="font-size: 22px;">
+					  <code>$ curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh</code>
+					</pre>
+				</section>
+				<section>
+					在 Windows 上安装 rust
+					<p>
+						需要依赖于 C++ 环境，稍微麻烦一些
+					</p>
+					<a href="https://course.rs/first-try/installation.html#%E5%9C%A8-windows-%E4%B8%8A%E5%AE%89%E8%A3%85-rustup"
+						target="_blank">安装教程</a>
+				</section>
+				<section>
+					检查是否安装成功
+					<pre>
+						<code>$ rustc -V
+rustc 1.58.0 (02072b482 2022-01-11)
+						</code>
+					</pre>
+				</section>
+			</section>
+			<section>
+				<section>编辑器插件安装</section>
+				<section>
+					VSCode 插件
+				</section>
+				<section>
+					Vim 插件
+				</section>
+			</section>
+			<section>
+				认识 Cargo
+			</section>
+			<section>下载依赖太慢了？</section>
+			<section>WebAssembly 示例</section>
+			<section>
+				在线练习
+				<a href="https://play.rust-lang.org/" target="_blank">https://play.rust-lang.org/</a>
+			</section>
+			<section>
+				Rust 学习曲线
+				<img src="./images/01.png" />
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
 </html>
