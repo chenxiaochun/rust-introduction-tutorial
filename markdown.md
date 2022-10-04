@@ -6,13 +6,41 @@
 
 -----
 
-* 连续七年成为全世界最受欢迎的语言、没有 GC 也无需手动内存管理
-* 性能比肩 C++/C 还能直接调用它们的代码、安全性极高
+1. 连续七年成为全世界最受欢迎的语言
+
+<!-- rust日报：<a href="https://rustcc.cn/article?id=8cfed228-a988-4186-9692-dc44e36baed9#:~:text=Rust%20%E8%BF%9E%E7%BB%AD%E7%AC%AC%207%20%E5%B9%B4%E6%88%90%E4%B8%BA%E6%9C%80%E5%8F%97%E5%96%9C%E7%88%B1%E7%9A%84%E8%AF%AD%E8%A8%80%20Rust%20%E5%9C%A8%202022%20%E5%B9%B4%E7%9A%84,StackOverflow%20%E8%B0%83%E6%9F%A5%E4%B8%AD%E8%BF%9E%E7%BB%AD%E7%AC%AC%207%20%E5%B9%B4%E6%88%90%E4%B8%BA%E6%9C%80%E5%8F%97%E5%96%9C%E7%88%B1%E7%9A%84%E8%AF%AD%E8%A8%80%E3%80%82%20Rust%20%E4%BD%9C%E4%B8%BA%E6%9C%80%E5%8F%97%E5%96%9C%E7%88%B1%E7%9A%84%E8%AF%AD%E8%A8%80%E5%B7%B2%E7%BB%8F%E8%B5%B0%E8%BF%87%E4%BA%86%E7%AC%AC%E4%B8%83%E4%B8%AA%E5%B9%B4%E5%A4%B4%EF%BC%8C%2087%25%20%E7%9A%84%E5%BC%80%E5%8F%91%E8%80%85%E8%A1%A8%E7%A4%BA%E4%BB%96%E4%BB%AC%E6%83%B3%E7%BB%A7%E7%BB%AD%E4%BD%BF%E7%94%A8%E5%AE%83%E3%80%82">rust 日报</a> -->
+
+<a href="https://survey.stackoverflow.co/2022/?utm_source=so-owned&utm_medium=announcement-banner&utm_campaign=dev-survey-2022&utm_content=results#most-loved-dreaded-and-wanted-language-want">stackoverflow survey</a>
 
 -----
 
-* 跨平台，可以编译为各系统的可执行文件
-* Rust 将来可能会成为 Linux 内核开发的第二语言
+2. 没有 GC 也无需手动内存管理
+
+-----
+
+3. 跨平台，可以编译为各系统的可执行文件
+
+-----
+
+4. 性能比肩 C++/C 还能直接调用它们的代码、安全性极高
+
+-----
+
+5. Rust 将来可能会成为 Linux 内核开发的第二语言
+
+<img src="https://img14.360buyimg.com/imagetools/jfs/t1/142432/15/29758/94664/633c00c2E794b0c01/5b372bed032485ef.png">
+
+-----
+
+<!-- .slide2: data-background="#000" -->
+* 极其严格的类型校验，甚至是代码只要能跑起来或者编译通过了，就说明你的代码质量已经很不错了
+* 与前端最接近的，就是可以编写 webAssembly
+
+-----
+
+* 支持 npm 每天十几亿次的下载量
+* 著名设计工具 figma 网页端的运行实现
+* 微信聊天里的『炸💩』功能据说也是用 webAssembly 实现的
 
 ---
 
@@ -120,6 +148,7 @@ cargo run
 ```
 </div>
 
+
 <div class="fragment fade-up">
 编译项目
 
@@ -130,11 +159,21 @@ cargo build
 
 -----
 
+<div>
+安装依赖
+
+```
+cargo install pkgName
+```
+</div>
+
+<div class="fragment fade-up">
 运行单元测试
 
 ```shell
 cargo test
 ```
+</div>
 
 <div class="fragment fade-up">
 项目检查
