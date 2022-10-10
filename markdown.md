@@ -36,37 +36,44 @@
 
 3. 跨平台，可以编译为各系统的可执行文件
 
+<!-- .slide: data-background="https://miro.medium.com/max/851/1*TLqYA0gwLrLAfXMGoTWFlQ.png" data-background-opacity="0.1" data-background-size="contain" -->
 <a href="https://zhuanlan.zhihu.com/p/128626720" target="_blank">交叉编译</a>
 
 -----
 
+<!-- .slide: data-background="https://media.bitdegree.org/storage/media/images/2019/11/Rust-vs-C.jpg" data-background-opacity="0.1" data-background-size="contain" -->
 4. <a href="https://www.jianshu.com/p/95884d1d04aa">性能比肩 C++/C 还能直接调用它们的代码、安全性极高</a>
 
 -----
 
+<!-- .slide: data-background="https://oscimg.oschina.net/oscnet/up-933d6cb2a65d5d7694422048292cdbd7ce5.jpg" data-background-opacity="0.1" data-background-size="contain" -->
 5. Rust 将来可能会成为 Linux 内核开发的第二语言
 
 <img src="https://img14.360buyimg.com/imagetools/jfs/t1/142432/15/29758/94664/633c00c2E794b0c01/5b372bed032485ef.png">
 
 -----
 
-<!-- .slide2: data-background="#000" -->
+<!-- .slide: data-background="https://www.shuttle.rs/images/blog/ferris-error-handling.png" data-background-opacity="0.1" data-background-size="contain" -->
 6. 极其严格的类型校验，甚至是代码只要能跑起来或者编译通过了，就说明你的代码质量已经很不错了
 
 -----
 
+<!-- .slide: data-background="https://www.rust-lang.org/static/images/wasm-ferris.png" data-background-opacity="0.1" data-background-size="contain" -->
 7. 与前端最接近的，就是可以编写 <a href="https://github.com/chenxiaochun/blog/blob/master/article/%E7%BC%96%E8%AF%91Rust%E4%B8%BAWebAssembly.md" target="_blank">webAssembly</a>
 
 -----
 
+<!-- .slide: data-background="https://img14.360buyimg.com/imagetools/jfs/t1/184097/14/32232/11986/633bf6d3Efa88ab3f/bbb7c32f21f04be8.png" data-background-opacity="0.1" -->
 8. 支持 npm 每天十几亿次的下载量
 
 -----
 
-9. 著名设计工具 figma 网页端的运行实现
+<!-- .slide: data-background="https://img12.360buyimg.com/imagetools/jfs/t1/91779/10/31396/399571/6343f5faE44b5c5df/78cacf9bca4a6d9a.png" data-background-opacity="0.1" data-background-size="contain" -->
+9. 著名设计工具 <a href="https://www.figma.com/files/recent?fuid=841590831032294578" target="_blank">figma</a> 网页版的运行实现
 
 -----
 
+<!-- .slide: data-background="https://img13.360buyimg.com/imagetools/jfs/t1/144545/1/30528/102195/63440632Ea742b0f7/004ae7b028f6ecdb.png" data-background-opacity="0.1" data-background-size="contain" -->
 10. 微信聊天里的『💣️💩』功能据说是用 webAssembly 实现的
 
 ---
