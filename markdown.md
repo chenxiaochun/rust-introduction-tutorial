@@ -63,7 +63,7 @@
 -----
 
 <!-- .slide: data-background="https://www.rust-lang.org/static/images/wasm-ferris.png" data-background-opacity="0.1" data-background-size="contain" -->
-7. 与前端最接近的，就是可以编写 <a href="https://github.com/chenxiaochun/blog/blob/master/article/%E7%BC%96%E8%AF%91Rust%E4%B8%BAWebAssembly.md" target="_blank">webAssembly</a>
+7. 可以编写 <a href="https://github.com/chenxiaochun/blog/blob/master/article/%E7%BC%96%E8%AF%91Rust%E4%B8%BAWebAssembly.md" target="_blank">webAssembly</a>
 
 -----
 
@@ -84,6 +84,12 @@ npm 的身份验证服务没那么复杂，以 Node.js 重写只花了一个小�
 
 <!-- .slide: data-background="https://img12.360buyimg.com/imagetools/jfs/t1/170748/16/31022/1383394/6344c25bE13d54838/32b61c89f9f4ca13.gif" data-background-opacity="0.1" data-background-size="contain" -->
 10. 微信聊天里的『💣️💩』功能据说是用 webAssembly 实现的
+
+-----
+
+11. 更多...
+
+https://github.com/i5ting/rust-fe
 
 ---
 
@@ -322,10 +328,11 @@ registry = "git://mirrors.ustc.edu.cn/crates.io-index"
 
 -----
 
-<div class="fragment fade-out">
-但是，不要害怕
-</div>
-<div class="fragment">
+但是，不要害怕！
+
+-----
+
+<div class="fragment grow">
 以上通通不讲，我们只讲点儿基础知识，<br/>因为我也不会🤪
 </div>
 
@@ -422,20 +429,69 @@ fn another_function(x: i32, y: f32) {
 
 ---
 
-## 举个例子🌰
+## 举几个例子🌰
+
+-----
+
+🌰本地`hello_world`示例
+
+-----
+
+自动热更新
+
+```shell
+cargo install cargo-watch
+```
+
+```shell
+cargo watch -x run
+```
+
+-----
+
+安装依赖包时，自动将信息加入到`Cargo.toml`
+
+<p style="font-size: 20px; text-align: left;">
+首先需要安装`cargo-edit`，然后就会获得一个扩展命令`cargo add`。以后使用它安装第三方依赖，就能将依赖信息自动写入`Cargo.toml`了
+</p>
+
+```shell
+cargo install cargo-edit
+```
+
+```shell
+cargo add mycrate
+```
+
+-----
+
+<a href="https://github.com/chenxiaochun/blog/blob/master/article/%E7%BC%96%E8%AF%91Rust%E4%B8%BAWebAssembly.md" target="_blank">
+🌰 Rust 编写 webAssembly 示例
+</a>
 
 ---
 
-在线练习
+## 相关教程📔
+
+-----
 
 * <a href="https://play.rust-lang.org/" target="_blank">rust playground</a>
 * <a href="https://learn.microsoft.com/zh-cn/training/paths/rust-first-steps/" target="_blank">rust 待办事项小应用</a>
 * <a href="https://github.com/chenxiaochun/blog/blob/master/article/%E7%BC%96%E8%AF%91Rust%E4%B8%BAWebAssembly.md" target="_blank">rust webAssembly</a>
+* <a href="https://course.rs/about-book.html" target="_blank">Rust 语言圣经</a>
 
 <div class="fragment zoom-in" style="margin-top: 20px;">都是入门级练习，只要按照步骤做，绝对能成功 ✌️</div>
 
 ---
 
-Rust 学习曲线
+## Rust 学习曲线📈
+
+-----
 
 <img src="./images/01.png" />
+
+---
+
+# 💊
+
+本次从入门到放弃，分享结束
