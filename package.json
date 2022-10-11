@@ -10,7 +10,8 @@
   "scripts": {
     "test": "gulp test",
     "start": "gulp serve",
-    "build": "gulp build"
+    "build": "gulp build",
+    "buildHtml": "pandoc -t revealjs -s -o index_output.html markdown.md"
   },
   "author": {
     "name": "Hakim El Hattab",
